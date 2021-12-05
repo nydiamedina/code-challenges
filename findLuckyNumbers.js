@@ -15,4 +15,4 @@ const findLuckyNumbers = n => {
   return luckyNumbers;
 }
 
-console.log(findLuckyNumbers(10));
+console.log(findLuckyNumbers(9));
