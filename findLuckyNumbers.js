@@ -13,7 +13,6 @@ luckyNumbers(6)
 // returns (1, 7, 9, 6, 5, 2)
 */
 
-
 // Write your code below this line.
 const findLuckyNumbers = n => {
   const min = 1;
