@@ -20,7 +20,7 @@ const hasUniqueChars = word => {
   let characters = word.split('');
   let uniqueCharacters = [...new Set(characters)];
 
-  return word.length === uniqueCharacters.length ? true : false;
+  return word.length === uniqueCharacters.length;
 }
 
 console.log(hasUniqueChars('Nydiaaaa'));
