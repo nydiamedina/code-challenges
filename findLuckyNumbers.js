@@ -14,16 +14,18 @@ luckyNumbers(6)
 */
 
 // Write your code below this line.
-const findLuckyNumbers = n => {
+const findLuckyNumbers = (n) => {
   const min = 1;
   const max = 10;  
   let luckyNumbers = [];
 
+  const getLuckyNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+
   for (let i = 0; i < n; i++) {
-    let newLuckyNumber = Math.floor(Math.random() * (max - min + 1) + min);    
+    let newLuckyNumber = getLuckyNumber(min, max);
     
     while (luckyNumbers.includes(newLuckyNumber)) {
-      newLuckyNumber = Math.floor(Math.random() * (max - min + 1) + min);
+      newLuckyNumber = getLuckyNumber(min, max);
     }
     luckyNumbers.push(newLuckyNumber);
   }
